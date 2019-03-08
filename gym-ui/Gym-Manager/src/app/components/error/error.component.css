@@ -1,0 +1,12 @@
+
+
+.shubbi {
+    font: bold;
+    /* font-style: italic; */
+    color: rgb(255, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    padding-left: 25%;
+    padding-top: 10%;
+    padding-right: initial;
+}

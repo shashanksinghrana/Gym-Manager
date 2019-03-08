@@ -1,0 +1,67 @@
+@import "../../../../sass/variables";
+
+.fc-detail-header h5{  
+    margin: 5px 0px 0px 0px; 
+}
+
+.fc-data-row {
+  border-bottom: 1px solid $irisIce;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.fc-card-height {
+  height: 230px;
+  overflow-y: auto;
+}
+
+.fc-tab-content-wrapper {
+  margin-top: 5px;
+  height: 100%;
+}
+
+.fc-fit-height {
+  height: calc(100% - 275px);
+}
+
+.fc-list {
+  margin: 0;
+  padding: 0;
+
+  .fc-list-item {
+    list-style-type: none;
+    margin: 0;
+  }
+}
+.auditFontClass{
+  font-family: Roboto  !important;
+  ::ng-deep{
+    span{
+      font-family: Roboto  !important;
+    }
+  }
+}
+
+.c2c-slider {
+  .c2c-slider-indicators {
+    margin: 0;
+
+    li {
+      border: 1px solid $cornflower;
+      border-radius: 10px;
+      height: 8px;
+      width: 8px;
+      max-width: 8px;
+    }
+
+    .active {
+      background-color: $cornflower;
+    }
+  }
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: .5;
+  pointer-events: none;
+}

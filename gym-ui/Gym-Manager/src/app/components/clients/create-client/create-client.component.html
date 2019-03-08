@@ -1,0 +1,71 @@
+<div class="container">
+  <form [formGroup] = "form">
+    <div class="form-group">
+      <label for="username">Name:</label>
+      <input 
+        class="form-control"
+        formControlName = "username" 
+        id="username" 
+        type="text"
+      />
+    </div>
+    <div *ngIf="username.invalid && username.touched " class="alert alert-danger">Username is required</div>
+  <div class="form-group">
+    <label for="password"> Password:</label>
+    <input 
+      formControlName = "password"
+      class="form-control"  
+      type="password" 
+      id="password" 
+    />
+  </div>
+  <div formGroupName = "contact">
+    <div class="rows">
+      <div class="col-2">
+        <label for="phone">Phone:</label>
+      </div>
+      <div class="col-4">
+        <input 
+          phoneFormat
+          class="form-control"
+          formControlName = "phone" 
+          id="phone" 
+          type="text"
+        />
+      </div>
+      <div class="col-2">
+        <label for="email">Email:</label>
+      </div>
+      <div class="col-4">
+        <input 
+          class="form-control"
+          formControlName = "email" 
+          id="email" 
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+    <div class="form-group">
+      <label  for="hb">Hobbies</label>                    
+      <input 
+        class="form-control" 
+        formControlName = "hobbies" 
+        type="text" 
+        id="hobbies"
+        #hobby
+        (keyup.enter) = "addHobby(hobby)"
+        >
+        <ul class="list-group">
+          <li
+            class="list-group-item"
+            *ngFor = "let item of hobbyArray.controls"
+            >{{item.value}}             
+          </li>
+        </ul> 
+    </div>
+    
+    
+        <button class="btn btn-primary" type="submit" (click)="onSubmit()"> Submit</button>        
+  </form>
+</div>

@@ -1,0 +1,12 @@
+
+<ag-grid-angular 
+    style="width: 100%;" 
+    class="ag-theme-balham"
+    [rowData]="rowData" 
+    [columnDefs]="columnDefs"
+    rowSelection="multiple"
+    (cellClicked) = "getMemberDetails($event)"
+    [gridOptions] = "gridOptions"
+    (filterChanged) = "onFilterChanged($event)"
+>
+</ag-grid-angular>

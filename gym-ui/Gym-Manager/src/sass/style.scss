@@ -1,0 +1,48 @@
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  overflow-y: hidden;
+}
+
+body {
+  color: lightblue;
+  margin: 0;
+}
+
+.c2c-card-header {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 16.5px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.c2c-card {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.33) 1px 2px 7px 0px;
+  height: 100%;
+  padding: 15px;
+}
+
+.c2c-data-item-label {  
+  color:  #363636;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  padding-left: 10px; 
+}
+
+.c2c-data-item-value {
+  color:  #363636;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  padding-left: 10px;
+}
+
+.c2c-slider-row {
+  height: 30px;
+  margin-bottom: 5px;
+}

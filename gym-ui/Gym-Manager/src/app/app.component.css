@@ -1,0 +1,16 @@
+
+.sidebar
+    {
+        margin-top:300px; 
+        float: left;
+        
+    }
+    .main {
+        width: 85%;
+        height: 100%;
+        margin-left: 150px;
+        float: right;
+        background-color: aliceblue;
+        font-size: 18px; /* Increased text to enable scrolling */
+        padding: 10px;
+      }

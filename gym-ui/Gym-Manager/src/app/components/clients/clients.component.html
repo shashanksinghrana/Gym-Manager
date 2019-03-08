@@ -1,0 +1,14 @@
+All Clients: <a routerLink = "/createClient"><span style="padding-left: 1100px"><i class="fa fa-times-circle"></i></span></a>
+<hr>
+<gym-grid   
+    [selected] = "flag"
+    (select) = getClientDetails($event)
+    [gridData]="rowData" 
+    [colDefs]="columnDefs"
+    [gridOptions] = "gridOptions"
+    (filterSelect) = "onFilterChanged($event)"
+>
+</gym-grid>
+<hr>
+<app-client-details *ngIf = "flag"></app-client-details>
+
