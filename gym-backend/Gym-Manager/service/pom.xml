@@ -8,4 +8,16 @@
   <artifactId>service</artifactId>
   <name>gym-service</name>
   <description>For Business Layer</description>
+  <dependencies>
+  	<dependency>
+  		<groupId>ssr.gym.manager</groupId>
+  		<artifactId>dto</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>ssr.gym.manager</groupId>
+  		<artifactId>service</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>

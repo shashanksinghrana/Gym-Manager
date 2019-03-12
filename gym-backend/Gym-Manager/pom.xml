@@ -28,7 +28,6 @@
 		<module>service</module>
 		<module>dao</module>
 		<module>dto</module>
-		<module>entity</module>
 		<module>common</module>
 	</modules>
 	<dependencies>

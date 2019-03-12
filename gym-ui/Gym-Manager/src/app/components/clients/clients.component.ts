@@ -33,9 +33,9 @@ export class ClientsComponent implements OnInit {
   public initializeGrid() {
     this.gridOptions = <GridOptions>{
       onGridReady: () => {
-           this.gridOptions.api.sizeColumnsToFit();
-           this.gridOptions.api.setFilterModel(JSON.parse(sessionStorage.getItem('FILTER')));          
-           console.log("Test", this.gridOptions.api.getFilterModel());
+          this.gridOptions.api.sizeColumnsToFit();
+          this.gridOptions.api.setFilterModel(JSON.parse(sessionStorage.getItem('FILTER')));          
+          console.log("Test", this.gridOptions.api.getFilterModel());
        }
    };
   }
