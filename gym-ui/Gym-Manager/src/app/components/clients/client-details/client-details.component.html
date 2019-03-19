@@ -103,3 +103,15 @@
         </div>
       </div>
     </div>
+    <div class="row no-gutters fc-fit-height">
+      <div class="col-12">
+        <div class="c2c-card mt-3">
+          <ul class="c2c-tab-list">
+            <li *ngFor="let tab of tabs" class="c2c-tab-item" id="pd-tab-{{tab.route}}"><a id="pd-a-{{tab.route}}" class="c2c-tab-title" routerLink="{{tab.route}}" routerLinkActive="gym-tab-active">{{tab.label}}</a></li>
+          </ul>
+          <div class="fc-tab-content-wrapper">
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+      </div>
+    </div>

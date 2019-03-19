@@ -1,3 +1,8 @@
-<p>
-  client-diet works!
-</p>
+<gym-grid   
+    [selected] = "flag"
+    (select) = getClientDetails($event)
+    [gridData]="rowData" 
+    [colDefs]="columnDefs"
+    [gridOptions] = "gridOptions"
+    (filterSelect) = "onFilterChanged($event)">
+</gym-grid>

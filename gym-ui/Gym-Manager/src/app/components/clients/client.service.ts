@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class ClientService {
+export class ClientService {  
 
   public _filterModel:any;
 
@@ -26,6 +26,17 @@ export class ClientService {
       {name: 'Shubbi', type:'Plainum', trainer:'SSR', doj:'7-Dec-19', number:'8806700774',dueDate:'7-Dec-19'},
       {name: 'Shashank', type:'Gold', trainer:'SSR', doj:'7-Dec-19', number:'8806700774',dueDate:'7-Dec-19'},
       {name: 'Surbhi', type:'Silver', trainer:'Shubbi', doj:'7-Dec-19', number:'8806700774',dueDate:'7-Dec-19'}
+    ];
+  }
+
+  public getTabItems(): Object[] {
+    return [
+      { label: 'Performers', route: 'performers' },
+      { label: 'Diet', route: 'diet' },
+      { label: 'Locations', route: 'locations' },
+      { label: 'Work Week', route: 'workWeek' },
+      { label: 'Crew', route: 'crew' },
+      { label: 'Status Dates', route: 'statusDates' }
     ];
   }
 }

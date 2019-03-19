@@ -1,3 +1,4 @@
+import { ClientService } from './../client.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
@@ -8,7 +9,13 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ClientDetailsComponent implements OnInit {
   public clientName:string;
-  constructor(private route:ActivatedRoute) { }
+  public tabs: Array<Object>;
+  constructor(
+      private route:ActivatedRoute,
+      private clientDetailService: ClientService
+      ) { 
+    this.tabs = this.clientDetailService.getTabItems();
+  }
 
   ngOnInit() {
     this.route.paramMap
